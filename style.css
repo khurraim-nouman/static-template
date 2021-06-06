@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #F5F5F5;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+i {
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+#navbar img {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#navbar #icons {
+    margin-bottom: 400px;
+}
+
+#content {
+    overflow: auto;
+}
+
+
+.trending-post {
+    background: #fff;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.trending-post #card1 {
+    width: 100%;
+    background-image: url('https://demo.smartaddons.com/templates/joomla3/sj-expnews/media/k2/items/cache/fd8b0f77d767f1f6640afba6916ff67c_M.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+.trending-post .span-red {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 125px;
+}
+
+.trending-post .span-red-small {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 55px; 
+}
+
+#card2 {
+    width: 100%;
+    background-image: url('images/card2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+#card3 {
+    width: 100%;
+    background-image: url('images/card3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+#card4 {
+    width: 100%;
+    background-image: url('images/card4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 h5 {
+    color: #fff;
+}
+
+.stay-connected {
+    background: #fff;
+    width: 100%;
+}
+
+.stay-connected i {
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+.stay-connected h5 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+.life-styles {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 25px;
+}
+
+.life-styles h5 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.life-styles .span-red {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.life-styles .card h4 {
+    font-size: 20px;
+}
+
+.card-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    border: none;
+  
+}
+
+.card-small p {
+    font-size: 18px;
+    color: #333;
+}
+
+.card-small img {
+    height: 100px;
+    width: 150px;
+}
+
+.life-styles .card p {
+    color: gray;
+    font-size: 14px;
+}
+
+
+
+.news-letter {
+    height: 260px;
+    width: 100%;
+    background-image: url('images/newsletter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.news-letter h4 {
+    color: #fff;
+    padding-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.news-letter p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.news-letter input[type='text'] {
+    height: 40px;
+    width: 35%;
+}
+
+.news-letter button  {
+    border: none;
+    background: red;
+    padding: 8px 30px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-bar {
+    background: #000;
+    color: #fff;
+}
+
+.footer-bar a {
+    margin: 20px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-bar a:hover {
+    text-decoration: none;
+}
+
+.world-news {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 25px;
+}
+
+.world-news h4 {
+    font-size: 19px;
+}
+
+.world-news .card {
+    border: none;
+}
+
+.world-news .card img {
+    width: 200px;
+}
+
+.world-news h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.world-news .span-red {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.entertainment {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
