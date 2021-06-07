@@ -21,7 +21,7 @@ html,body {
     height: 100%;
     width: 100%;
     position: sticky;
-    z-index: 1;
+    /*z-index: 1;*/
     top: 0;
     left: 0;
 }
@@ -41,9 +41,11 @@ i {
     margin-bottom: 400px;
 }
 
+/*
 #content {
     overflow: auto;
 }
+*/
 
 
 .trending-post {
@@ -132,6 +134,21 @@ i {
     top: 0px;
     left: 5px;
 }
+
+.stay-connected .facebook-stripe {
+    height: auto;
+    widows: 100%;
+    background: rgb(76, 128, 242);
+    color: #fff;
+}
+
+.facebook-stripe i {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    margin-left: 10px;
+}
+
 .stay-connected h5 {
     padding-top: 20px;
     margin-bottom: 20px;
@@ -198,7 +215,6 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 50px;
 }
 
 .news-letter h4 {
@@ -288,4 +304,205 @@ i {
     width: 100%;
     height: auto;
     background: #fff;
+}
+
+.entertainment .card {
+    border: none;
+}
+
+.entertainment .card p {
+    font-size: 15px;
+    color: gray;
+}
+
+.entertainment .span-red {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.whats-hot {
+    width: 100%;
+    background: #fff;
+    margin-top: 15px;
+}
+
+#whats-hot-card {
+    width: 100%;
+    background-image: url('images/whats-hot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+.whats-hot .span-red-small {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.k2-grid {
+    width: 100%;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.k2-grid .card {
+    border: none;
+}
+
+.k2-grid .card img {
+    width: 100%;
+}
+
+.k2-grid .card h5 {
+    font-size: 18px;
+}
+
+#k2-card {
+    width: 100%;
+    background-image: url('images/whats-hot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;   
+}
+
+#k2-card .span-red-small {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.food-and-recipe {
+    width: 100%;
+    height: auto;
+    background: #fff;   
+}
+
+#food-card {
+    width: 100%;
+    background-image: url('images/food-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #fff;
+}
+
+#food-card .span-red-small {
+    background: red;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.food-and-recipe .row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.food-and-recipe .row h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.app-icons {
+    padding-top: 25px;
+    background: #000;
+    color: #fff;
+}
+
+.app-icons a {
+    color: #fff;
+}
+
+.app-icons p {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.app-icons .d-flex {
+    margin-bottom: 30px;
+}
+
+.app-icons button {
+    background: gray;
+    padding: auto 30px;
+    border: none;
+    color: #fff;
+}
+
+
+.social-text {
+    background: #000;
+    height: auto;
+    width: 100%;
+}
+
+.s-box i {
+    position: relative;
+    top: -1px;
+    left: 5px;
+}
+
+.s-box:hover {
+    color: #fff;
+}
+
+.s-box:hover i {
+    background: red;
+    border-radius: 50%;
+    padding: 6px 10px;
+    position: relative;
+    right: 10px;
+    top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        height: auto;
+        width: auto;
+        position: relative;
+        z-index: none;
+    }   
+
+    #navbar #icons {
+        margin-bottom: 10px;
+    }
 }
