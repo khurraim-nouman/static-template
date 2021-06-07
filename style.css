@@ -47,6 +47,27 @@ i {
 }
 */
 
+nav {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: inline-flexbox;
+}
+
+nav p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav input {
+    border: none;
+    height: 20px;
+    border-left: 1px solid #333;
+}
+
+nav input::placeholder {
+    margin-right: 10px;
+}
 
 .trending-post {
     background: #fff;
@@ -142,7 +163,49 @@ i {
     color: #fff;
 }
 
+.stay-connected .twitter-stripe {
+    height: auto;
+    widows: 100%;
+    background: rgb(132, 193, 240);
+    color: #fff;
+}
+
+.stay-connected .google-plus-stripe {
+    height: auto;
+    widows: 100%;
+    background: rgb(145, 0, 0);
+    color: #fff;
+}
+
+.stay-connected .instagram-stripe {
+    height: auto;
+    widows: 100%;
+    background: rgb(191, 62, 133);
+    color: #fff;
+}
+
 .facebook-stripe i {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    margin-left: 10px;
+}
+
+.twitter-stripe i {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    margin-left: 10px;
+}
+
+.instagram-stripe i {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    margin-left: 10px;
+}
+
+.google-plus-stripe i {
     position: relative;
     top: -5px;
     left: 5px;
@@ -486,6 +549,27 @@ i {
     position: relative;
     right: 10px;
     top: 2px;
+}
+
+.watch-now {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.watch-now iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.list {
+    background: #333;
+    height: 300px;
+    overflow: auto;
+}
+
+.list img {
+    height: 75px;
 }
 
 @media only screen and (max-width: 600px) {
