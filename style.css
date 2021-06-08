@@ -38,7 +38,29 @@ i {
 }
 
 #navbar #icons {
-    margin-bottom: 400px;
+    margin-bottom: 150px;
+}
+
+.ham-menu {
+    margin-bottom: 150px;
+}
+
+#first-item {
+    position: absolute;
+    display: none;
+    left: 200px;
+    z-index: 2;
+}
+
+#first-menu:hover #first-item {
+    display: block;
+}
+
+#navbar .sideflow-item {
+    background: #ffff;
+    color: #333;
+    padding: 10px 40px;
+    
 }
 
 /*
@@ -63,6 +85,24 @@ nav input {
     border: none;
     height: 20px;
     border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+nav img {
+    height: 10px;
+    width: 20px;
+    border-left: 1px solid #333;
+    padding-left: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
+
+
+nav .nav-link {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 nav input::placeholder {
@@ -73,6 +113,7 @@ nav input::placeholder {
     background: #fff;
     width: 100%;
     margin-top: 20px;
+    z-index: 1;
 }
 
 .trending-post #card1 {
@@ -157,6 +198,7 @@ nav input::placeholder {
 }
 
 .stay-connected .facebook-stripe {
+    display: flex;
     height: auto;
     widows: 100%;
     background: rgb(76, 128, 242);
@@ -164,6 +206,7 @@ nav input::placeholder {
 }
 
 .stay-connected .twitter-stripe {
+    display: flex;
     height: auto;
     widows: 100%;
     background: rgb(132, 193, 240);
@@ -171,6 +214,7 @@ nav input::placeholder {
 }
 
 .stay-connected .google-plus-stripe {
+    display: flex;
     height: auto;
     widows: 100%;
     background: rgb(145, 0, 0);
@@ -178,6 +222,7 @@ nav input::placeholder {
 }
 
 .stay-connected .instagram-stripe {
+    display: flex;
     height: auto;
     widows: 100%;
     background: rgb(191, 62, 133);
@@ -311,8 +356,12 @@ nav input::placeholder {
 }
 
 .footer-bar {
+    display: flex;
+    justify-content: center;
     background: #000;
     color: #fff;
+    height: auto;
+    width: 100%;
 }
 
 .footer-bar a {
@@ -530,6 +579,8 @@ nav input::placeholder {
     background: #000;
     height: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .s-box i {
@@ -572,7 +623,9 @@ nav input::placeholder {
     height: 75px;
 }
 
+
 @media only screen and (max-width: 600px) {
+
     #navbar {
         background: #000;
         color: #fff;
@@ -586,7 +639,109 @@ nav input::placeholder {
         z-index: none;
     }   
 
+    .menu-text {
+        display: none !important;
+    }
+
+
     #navbar #icons {
         margin-bottom: 10px;
+        display: none;
     }
+
+    .social-text {
+        display: block !important;
+    }
+
+    .social-text {
+        display: grid;
+        /*margin: 20px 45% !important;*/
+        align-items: center;
+        text-align: center;
+    }
+
+    #apps {
+        display: grid !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #apps img {
+        margin-right: none !important;
+        margin-bottom: 25px;
+    }
+
+
+    .footer-bar {
+        width: 100%;
+        height: auto;
+        display: grid;
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+
+
+@media only screen and (max-width: 968px) {
+    nav .nav-link {
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #icons {
+        display: block;
+    }
+
+    .trending-post .span-red,
+    .trending-post .span-red-small {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+
+    .s-box {
+        display: block;
+        margin: 20px 400px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .facebook-stripe,
+    .instagram-stripe,
+    .twitter-stripe,
+    .google-plus-stripe {
+        display: grid;
+        border-left: none !important;
+    }
+
+    .stay-connected p {
+        display: none !important;
+    }
+
+
+    .facebook-stripe,
+    .instagram-stripe,
+    .twitter-stripe,
+    .google-plus-stripe p {
+        display: none;
+    }
+
+    
+    .k2-grid .card h5 {
+        font-size: 10px;
+    }
+
+    .k2-grid .card p {
+        font-size: 9px;
+    }
+
 }
