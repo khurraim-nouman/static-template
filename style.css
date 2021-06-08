@@ -652,10 +652,11 @@ nav input::placeholder {
 
 @media only screen and (max-width: 600px) {
 
+
     #black-navbar-button {
         display: block;
-        margin: 25px 30px;
-        padding: 10px;
+        background: #333;
+        margin: 40px 50px;
     }
 
     #menu-btn-second {
