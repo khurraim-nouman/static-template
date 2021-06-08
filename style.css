@@ -5,7 +5,7 @@ html,body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #F5F5F5;
+    background: #F5F5F5 !important;
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
     width: 100%;
@@ -24,6 +24,10 @@ html,body {
     z-index: 10;
     top: 0;
     left: 0;
+}
+
+#black-navbar-button {
+    display: none;
 }
 
 i {
@@ -45,6 +49,16 @@ i {
     margin-bottom: 150px;
 }
 
+#navbar1 {
+    display: block;
+    background: #fff;
+    color: #333;
+}
+
+#navbar2 {
+    display: none;
+}
+
 #first-item {
     position: absolute;
     display: none;
@@ -59,8 +73,8 @@ i {
 #navbar .sideflow-item {
     background: #ffff;
     color: #333;
-    padding: 10px 40px;
-    
+    padding: 10px 20px;
+    width: 300px;
 }
 
 
@@ -68,6 +82,9 @@ i {
     z-index: 5;
 }
 
+.card {
+    border: none !important;
+}
 
 nav {
     width: 100%;
@@ -92,6 +109,12 @@ nav img {
     width: 20px;
     border-left: 1px solid #333;
     padding-left: 5px;
+}
+
+#second-navbar {
+    margin: none !important;
+    padding: none !important;
+    display: none;
 }
 
 .navbar-toggler-icon {
@@ -629,6 +652,18 @@ nav input::placeholder {
 
 @media only screen and (max-width: 600px) {
 
+    #black-navbar-button {
+        display: block;
+        margin: 25px 30px;
+        padding: 10px;
+    }
+
+    #menu-btn-second {
+        background: #fff;
+        color: #333;
+        padding: none;
+    }
+
     #navbar {
         background: #000;
         color: #fff;
@@ -638,12 +673,26 @@ nav input::placeholder {
         font-size: 14px;
         height: auto;
         width: auto;
+        display: flex;
+        justify-content: center;
         position: relative;
         z-index: none;
-    }   
+    }
 
-    .menu-text {
-        display: none !important;
+    #navbar1 {
+        display: none;
+    }
+    
+    #second-navbar {
+        display: block;
+    }
+
+    #navbar2 {
+        display: block;
+    }
+
+    .menu-text  {
+        display: none;
     }
 
 

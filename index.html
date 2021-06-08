@@ -12,6 +12,19 @@
 
     <link rel="stylesheet" href="style.css">
 
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="css/pushy.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- jQuery -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -23,23 +36,159 @@
 
 
         <!-- Navbar Starts From Here -->
-        <div class="col-sm-3 col-md-3 col-lg-2 col-12" id="navbar" >
+        <div class="col-sm-3 col-md-3 col-lg-2 col-12" id="navbar">
 
             <img src="https://demo.smartaddons.com/templates/joomla3/sj-expnews/templates/sj_expnews/images/presets/preset1/logo.png" alt="Image Not Found" class="img-fluid">
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+               <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+
+                        <li class="pushy-link"><a href="#">Home</a></li>
+                       
+                        <ul>
+                            <li class="pushy-submenu">
+                                <button>Pages</button>
+                                <ul>
+                                    <li class="pushy-link"><a href="#">About Us</a></li>
+                                    <li class="pushy-link"><a href="#">Contact Us</a></li>
+                                    <li class="pushy-link"><a href="#">404 Page</a></li>
+                                    <li class="pushy-link"><a href="#">Coming Soon....</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="pushy-link"><a href="#">Portfolio</a></li>
+                            
+                            <li class="pushy-submenu">
+                                <button>K2</button>
+                                <ul>
+                                    <li class="pushy-link"><a href="#">K2 Listing</a></li>
+                                    <li class="pushy-submenu">
+                                        <button href="#">K2 Grid</button>
+                                        <ul>
+                                            <li class="pushy-link"><a href="#">Grid 2 Columns</a></li>
+                                            <li class="pushy-link"><a href="#">Grid 3 Columns</a></li>
+                                            <li class="pushy-link"><a href="#">Grid 4 Columns</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pushy-link"><a href="#">K2 Item</a></li>
+                                    <li class="pushy-link"><a href="#">K2 Tag</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="pushy-submenu">
+                        <button>Blog</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Blog With Right Sidebar</a></li>
+                            <li class="pushy-link"><a href="#">Blog With LEft Sidebar</a></li>
+                            <li class="pushy-link"><a href="#">Article Category Blog</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="pushy-submenu">
+                        <button>Post Formats</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Standard Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">VideoPost Formats</a></li>
+                            <li class="pushy-link"><a href="#">Audio Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">Gallery Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">Link Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">Quote Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">Status Post Formats</a></li>
+                            <li class="pushy-link"><a href="#">Image Post Formats</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="pushy-submenu">
+                        <button>Joomla</button>
+                        <ul>
+                            <li class="pushy-submenu">
+                                <button href="#">Content Component</button>
+                                <ul>
+                                    <li class="pushy-link"><a href="#">Single Article</a></li>
+                                    <li class="pushy-link"><a href="#">Article Category Blog</a></li>
+                                    <li class="pushy-link"><a href="#">Article Category List</a></li>
+                                    <li class="pushy-link"><a href="#">Featured Articles</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="pushy-submenu">
+                                <button href="#">User Component</button>
+                                <ul>
+                                    <li class="pushy-link"><a href="#">Login Form</a></li>
+                                    <li class="pushy-link"><a href="#">User Profile</a></li>
+                                    <li class="pushy-link"><a href="#">Edit User Profile</a></li>
+                                    <li class="pushy-link"><a href="#">Registration</a></li>
+                                </ul>
+                            </li>
+
+                            
+                            <li class="pushy-submenu">
+                                <button href="#">Other Component</button>
+                                <ul>
+                                    <li class="pushy-link"><a href="#">News Feed Component</a></li>
+                                    <li class="pushy-link"><a href="#">Search Componrnts</a></li>
+                                    <li class="pushy-link"><a href="#">Smart Search</a></li>
+                                    <li class="pushy-link"><a href="#">Search</a></li>
+                                </ul>
+                            </li>
+
+                           
+
+                            
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn" id="black-navbar-button">&#9776; Menu</button>
+
+        </div>
+
+
+
+            <div class=" justify-content-start py-1 mb-3 menu-text" >
                 <i class="fa fa-home mr-3" aria-hidden="true"></i> Home
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+            <div class=" justify-content-start py-1 mb-3 menu-text" id="first-menu">
                 <i class="fa fa-file-o mr-3" aria-hidden="true"></i> Pages
+
+                <div class="sideflow-menu" id="first-item">
+                    <div class="sideflow-item">About Us</div>
+                    <div class="sideflow-item">Contact Us</div>
+                    <div class="sideflow-item">404 Page</div>
+                    <div class="sideflow-item">Coming Soon</div>
+                </div>
+
+
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+            <div class=" justify-content-start py-1 mb-3 menu-text">
                 <i class="fa fa-pie-chart mr-3" aria-hidden="true"></i> Portfolio
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text" id="first-menu">
+            <div class=" justify-content-start py-1 mb-3 menu-text" id="first-menu">
                 <i class="fa fa-newspaper-o mr-3" aria-hidden="true"></i> K2
 
                 <div class="sideflow-menu" id="first-item">
@@ -48,18 +197,36 @@
                     <div class="sideflow-item">K2 Item</div>
                     <div class="sideflow-item">K2 Tag</div>
                 </div>
+
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+            <div class=" justify-content-start py-1 mb-3 menu-text" id="first-menu">
                 <i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i> Blog
+
+                <div class="sideflow-menu" id="first-item">
+                    <div class="sideflow-item">Blog With Right Sidebar</div>
+                    <div class="sideflow-item">Blog With Left Sidebar</div>
+                    <div class="sideflow-item">Archive Category Blog</div>
+                    
+                </div>
+
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+            <div class=" justify-content-start py-1 mb-3 menu-text">
                 <i class="fa fa-paint-brush mr-3" aria-hidden="true"></i> Post Formats
             </div>
 
-            <div class="d-flex justify-content-start py-1 mb-3 menu-text">
+            <div class=" justify-content-start py-1 mb-3 menu-text" id="first-menu">
                 <i class="fa fa-joomla mr-3" aria-hidden="true"></i> Joomla
+
+                <div class="sideflow-menu" id="first-item">
+                    <div class="sideflow-item">Content Component</div>
+                </div>
+
+                <div class="sideflow-menu" id="first-item">
+                    <div class="sideflow-item">Content Component</div>
+                </div>
+
             </div>
 
             <div class="py-1" id="icons">
@@ -82,8 +249,8 @@
 
 
 
-                                <nav class="navbar navbar-expand-md navbar-light mt-3">
-                                    <!-- Brand -->
+                <nav class="navbar navbar-expand-lg n mt-3" id="navbar1">
+                                   
                                     <!--<a class="navbar-brand" href="#">Navbar</a>-->
                                   
                                     <!-- Toggler/collapsibe Button -->
@@ -93,7 +260,7 @@
                                   
                                     <!-- Navbar links -->
                                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                      <ul class="navbar-nav">
+                                      <ul class="navbar-nav mt-3">
 
                                         <li class="nav-item">
                                           <a class="nav-link" href="#">Top Stories</a>
@@ -125,18 +292,69 @@
 
                                       </ul>
 
+                                      
+                                        <div class="d-flex justify-content-end ml-5 mt-2 trio" >
+                                            <input type="text" placeholder="Enter your Search...">
+                                            <i class="fa fa-unlock-alt"></i>
+                                            <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png"
+                                                alt=""
+                                                class="img-fluid ml-3">
+                                        </div>
+
                                     </div>
 
-                                    <div class="d-flex justify-content-end">
-                                        <input type="text" placeholder="Enter your Search...">
-                                        <i class="fa fa-unlock-alt"></i>
-                                        <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png"
-                                             alt=""
-                                             class="img-fluid ml-3">
-                                    </div>
 
 
-                                  </nav>
+                </nav>
+
+                       <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#second-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-link"><a href="#">Item 1</a></li>
+                    <li class="pushy-link"><a href="#">Item 2</a></li>
+                    <li class="pushy-link"><a href="#">Item 3</a></li>
+                    <li class="pushy-link"><a href="#">Item 4</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+
+            <nav class="navbar navabr-expand-lg bg-white navbar-white" id="navbar2">
+                <div class="container">
+                    <!-- Menu Button -->
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-6">
+                            <button class="menu-btn" id="menu-btn-second">&#9776;</button>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-6">
+                            <div class="d-flex justify-content-end ml-5 mt-2 trio" >
+                                <input type="text" placeholder="Enter your Search...">
+                                <i class="fa fa-unlock-alt"></i>
+                                <img src="https://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png"
+                                    alt=""
+                                    class="img-fluid ml-3">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                    
+                </div>
+            </nav>    
+        </div>
+
+
+
 
 
                 <!-- Trending Post Starts Here-->
@@ -722,7 +940,7 @@
 
                                     <div class="row">
 
-                                        <div class="col-sm-6 col-md-12 col-lg-6 col-6">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-6">
                                             <div class="card">
 
                                                 <div class="row">
@@ -731,7 +949,7 @@
                                                     </div>
         
                                                     <div class="col-sm-6 col-md-12 col-lg-6 col-12">
-                                                        <h5>8 Magazine Blog News Premium WordPress</h5>
+                                                        <p>8 Magazine Blog News Premium WordPress</p>
                                                         <p class="d-flex">
                                                             <i class="fa fa-clock-o mr-3"></i>
                                                             May 24 2017
@@ -744,7 +962,7 @@
 
                                         </div>
 
-                                        <div class="col-sm-6 col-md-6 col-md-6 col-6">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-6">
                                             
                                                 <div class="card">
 
@@ -754,7 +972,7 @@
                                                             </div>
 
                                                             <div class="col-sm-6 col-md-6 col-12">
-                                                                <h5 >8 Magazine Blog News Premium WordPress</h5>
+                                                                <p>8 Magazine Blog News Premium WordPress</p>
                                                                 <p class="d-flex">
                                                                     <i class="fa fa-clock-o mr-3"></i>
                                                                     May 24 2017
@@ -909,6 +1127,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Pushy JS -->
+    <script src="js/pushy.min.js"></script>
 
   </body>
 </html>
