@@ -59,6 +59,25 @@ i {
     display: none;
 }
 
+.card h3:hover,
+.card h5:hover,
+.card h6:hover {
+    color: red !important;
+}
+
+.life-styles p:hover,
+.life-styles h4:hover {
+    color: red;
+}
+
+.food-and-recipe h6:hover {
+    color: red !important;
+}
+
+.k2-grid h6:hover {
+    color: red;
+}
+
 #first-item {
     position: absolute;
     display: none;
@@ -568,7 +587,7 @@ nav input::placeholder {
 }
 
 .food-and-recipe .row h6 {
-    font-weight: 700;
+    font-weight: normal;
     margin-bottom: 15px;
 }
 
@@ -738,6 +757,10 @@ nav input::placeholder {
         font-size: 22px;
     }
 
+    .stay-connected p {
+        display: inline-block !important;
+    }
+
 }
 
 
@@ -785,9 +808,6 @@ nav input::placeholder {
         border-left: none !important;
     }
 
-    .stay-connected p {
-        display: none !important;
-    }
 
 
     .facebook-stripe,
