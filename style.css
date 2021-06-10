@@ -99,6 +99,13 @@ i {
 
 #content {
     z-index: 5;
+    padding-right:0;
+    padding-left:0;
+}
+
+.padding-0 {
+    padding-right:0;
+    padding-left:0;
 }
 
 .card {
@@ -628,6 +635,15 @@ nav input::placeholder {
     justify-content: center;
 }
 
+
+.s-box {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
 .s-box i {
     position: relative;
     top: -1px;
@@ -641,10 +657,8 @@ nav input::placeholder {
 .s-box:hover i {
     background: red;
     border-radius: 50%;
-    padding: 6px 10px;
+    padding: 6px 5px;
     position: relative;
-    right: 10px;
-    top: 2px;
 }
 
 .watch-now {
@@ -733,7 +747,7 @@ nav input::placeholder {
     }
 
     #apps {
-        display: grid !important;
+        display: block !important;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -755,6 +769,12 @@ nav input::placeholder {
 
     .card-small p {
         font-size: 22px;
+    }
+
+    .s-box {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .stay-connected p {
@@ -779,10 +799,6 @@ nav input::placeholder {
         font-size: 10px;
     }
 
-    .s-box {
-        display: block;
-        margin: 20px 400px;
-    }
 
     .world-news {
         width: 100%;
